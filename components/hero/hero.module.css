@@ -105,9 +105,12 @@
   border-radius: var(--radius-xs);
   background: var(--color-white);
   color: var(--brand-primary);
+
   box-shadow:
-    0 8px 22px rgb(6 8 77 / 20%),
-    0 1px 4px rgb(6 8 77 / 12%);
+    0 10px 28px rgb(6 8 77 / 22%),
+    0 3px 10px rgb(6 8 77 / 14%),
+    0 1px 2px rgb(6 8 77 / 10%);
+
   font-size: 14px;
   font-weight: 650;
   line-height: 1;
@@ -115,16 +118,20 @@
   opacity: 0;
   transform: translateY(8px);
   animation: revealCta 380ms ease var(--cta-delay) forwards;
-  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
 }
 
 .cta:hover {
   background: var(--color-white);
   color: var(--brand-primary);
   border-color: rgb(8 11 99 / 42%);
-  box-shadow:
-    0 12px 30px rgb(6 8 77 / 27%),
-    0 2px 7px rgb(6 8 77 / 16%);
+ box-shadow:
+    0 14px 34px rgb(6 8 77 / 28%),
+    0 5px 14px rgb(6 8 77 / 16%),
+    0 1px 3px rgb(6 8 77 / 12%);
   transform: translateY(-1px);
 }
 
