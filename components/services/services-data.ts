@@ -15,7 +15,7 @@ export const serviceItems: readonly ServiceItem[] = [
     description:
       "Supply of industrial products, consumables, electrical products, hardware, tools, equipment, vehicles and safety products.",
     icon: "industrial",
-    href: "/trading",
+    href: "/#what-we-do",
   },
   {
     id: "civil-building-steel",
@@ -23,7 +23,7 @@ export const serviceItems: readonly ServiceItem[] = [
     description:
       "Civil works, residential buildings, villas and industrial steel structures delivered with quality and safety in focus.",
     icon: "construction",
-    href: "/contracting",
+    href: "/#engineering",
   },
   {
     id: "heavy-equipment-rental-sales",
@@ -31,7 +31,7 @@ export const serviceItems: readonly ServiceItem[] = [
     description:
       "Rental and sale of man lifts, forklifts, excavators, cranes, bulldozers and water tankers according to client needs.",
     icon: "equipment",
-    href: "/transportation",
+    href: "/#what-we-do",
   },
   {
     id: "transportation-equipment-support",
@@ -39,6 +39,6 @@ export const serviceItems: readonly ServiceItem[] = [
     description:
       "Transportation for construction and excavation works, supported by equipment maintenance and operational readiness.",
     icon: "transport",
-    href: "/transportation",
+    href: "/#what-we-do",
   },
 ];

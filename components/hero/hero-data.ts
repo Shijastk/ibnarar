@@ -25,7 +25,7 @@ export const heroSlides: readonly HeroSlideData[] = [
       "Trading, contracting and transportation",
       "solutions serving Qatar since 2003.",
     ],
-    cta: { label: "Discover EBN ARAR", href: "/about" },
+    cta: { label: "Discover EBN ARAR", href: "/#about" },
   },
   {
     id: "engineering-contracting",
@@ -37,7 +37,7 @@ export const heroSlides: readonly HeroSlideData[] = [
       "Reliable civil, building and industrial",
       "project execution.",
     ],
-    cta: { label: "Explore Contracting", href: "/contracting" },
+    cta: { label: "Explore Contracting", href: "/#engineering" },
   },
   {
     id: "trading-services",
@@ -49,7 +49,7 @@ export const heroSlides: readonly HeroSlideData[] = [
       "Dependable sourcing of industrial products,",
       "equipment and essential supplies.",
     ],
-    cta: { label: "Explore Trading", href: "/trading" },
+    cta: { label: "Explore Trading", href: "/#services" },
   },
   {
     id: "heavy-equipment",
@@ -61,6 +61,6 @@ export const heroSlides: readonly HeroSlideData[] = [
       "Equipment and transportation support",
       "for demanding projects.",
     ],
-    cta: { label: "Explore Equipment", href: "/transportation" },
+    cta: { label: "Explore Equipment", href: "/#what-we-do" },
   },
 ];
