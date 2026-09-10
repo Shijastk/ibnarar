@@ -8,12 +8,12 @@
 .inner {
   max-width: 1440px;
   margin: 0 auto;
-  padding: clamp(64px, 5.6vw, 84px) var(--page-gutter);
+  padding: clamp(56px, 4.8vw, 72px) var(--page-gutter);
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: clamp(48px, 6vw, 88px);
+  gap: clamp(40px, 5vw, 72px);
   position: relative;
-  align-items: start;
+  align-items: center;
 }
 
 .leftColumn,
@@ -61,14 +61,45 @@
 
 .intro {
   max-width: 610px;
-  margin: 24px 0 0;
+  margin: 22px 0 0;
   color: rgb(255 255 255 / 76%);
   font-size: clamp(14px, 1.04vw, 16px);
   line-height: 1.62;
 }
 
+.capabilityList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 28px;
+  max-width: 650px;
+}
+
+.capabilityItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  min-height: 66px;
+  padding: 14px 14px 13px;
+  border: 1px solid rgb(255 255 255 / 16%);
+  background: rgb(255 255 255 / 6%);
+  color: rgb(255 255 255 / 92%);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.capabilityMarker {
+  width: 7px;
+  height: 7px;
+  margin-top: 5px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #4e7ee3;
+}
+
 .rightColumn {
-  padding-top: 6px;
+  padding-top: 0;
 }
 
 .cards {
@@ -78,10 +109,10 @@
 }
 
 .card {
-  min-height: 300px;
+  min-height: 280px;
   background: #fff;
   color: #151515;
-  padding: clamp(30px, 2.5vw, 40px);
+  padding: clamp(28px, 2.3vw, 36px);
   border-radius: var(--radius-xs);
   box-shadow: 0 1px 0 rgb(255 255 255 / 18%);
 }
@@ -118,7 +149,7 @@
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  margin-top: 24px;
+  margin-top: 22px;
   min-height: 46px;
   padding: 0 20px;
   background: #fff;
@@ -143,8 +174,12 @@
 @media (max-width: 980px) {
   .inner {
     grid-template-columns: 1fr;
-    gap: 40px;
-    padding-bottom: 72px;
+    gap: 34px;
+    padding-bottom: 64px;
+  }
+
+  .capabilityList {
+    max-width: none;
   }
 
   .rightColumn {
@@ -154,7 +189,15 @@
 
 @media (max-width: 680px) {
   .inner {
-    padding-top: 56px;
+    padding-top: 52px;
+  }
+
+  .capabilityList {
+    grid-template-columns: 1fr;
+  }
+
+  .capabilityItem {
+    min-height: 0;
   }
 
   .cards {
