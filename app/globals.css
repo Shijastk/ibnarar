@@ -72,7 +72,7 @@
   --showcase-active-height: 486px;
   --showcase-icon-size: 48px;
   --showcase-divider-width: 42px;
-  --about-section-padding: clamp(58px, 5.2vw, 82px);
+  --about-section-padding: clamp(56px, 5.5vw, 82px);
   --about-section-max-width: 1440px;
   --about-image-height: clamp(420px, 34vw, 530px);
   --about-content-gap: clamp(42px, 5vw, 76px);
@@ -80,7 +80,7 @@
   --about-heading-size: clamp(38px, 3.6vw, 52px);
   --about-copy-size: clamp(15px, 1.08vw, 17px);
   --about-transition: 680ms cubic-bezier(0.22, 1, 0.36, 1);
-  --services-section-padding: clamp(58px, 5.2vw, 82px);
+  --services-section-padding: clamp(56px, 5.5vw, 82px);
   --services-section-max-width: 1320px;
   --service-card-bg: var(--color-white);
   --service-card-border: #dfe2e8;
@@ -96,7 +96,7 @@
   --highlights-bg: var(--brand-primary);
   --highlights-text: var(--color-white);
   --highlights-muted-text: rgb(255 255 255 / 72%);
-  --highlights-section-padding: clamp(50px, 4.4vw, 64px);
+  --highlights-section-padding: clamp(48px, 4.5vw, 64px);
   --highlights-section-max-width: 1320px;
   --highlights-heading-size: clamp(36px, 3.2vw, 46px);
   --highlights-heading-gap: clamp(32px, 3vw, 42px);
@@ -115,6 +115,14 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.section-anchor {
+  scroll-margin-top: calc(var(--header-height) + 12px);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -126,4 +134,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
