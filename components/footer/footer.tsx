@@ -5,16 +5,17 @@ import logo from "@/public/logo.png";
 
 const quickLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Careers", href: "/careers" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "What We Do", href: "/#what-we-do" },
+  { label: "About Us", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Engineering", href: "/#engineering" },
+  { label: "Projects", href: "/#projects" },
 ] as const;
 
 const divisions = [
-  { label: "Trading & Services", href: "/trading" },
-  { label: "Engineering & Contracting", href: "/contracting" },
-  { label: "Heavy Equipment & Transportation", href: "/transportation" },
+  { label: "Trading & Services", href: "/#what-we-do" },
+  { label: "Engineering & Contracting", href: "/#engineering" },
+  { label: "Heavy Equipment & Transportation", href: "/#what-we-do" },
 ] as const;
 
 function PinIcon() {
@@ -57,7 +58,7 @@ function FaxIcon() {
 
 export function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer id="contact" className={`${styles.footer} section-anchor`}>
       <div className={styles.main}>
         <div className={styles.brandColumn}>
           <Link href="/" className={styles.brand} aria-label="EBN ARAR home">
@@ -88,7 +89,7 @@ export function Footer() {
               <MailIcon />
               <span>info@ebnarar.com</span>
             </a>
-            <a className={styles.contactItem} href="tel:+9744800876">
+            <a className={styles.contactItem} href="tel:+97455577458">
               <PhoneIcon />
               <span>+974 55577458</span>
             </a>
@@ -103,7 +104,7 @@ export function Footer() {
           <h2>Our Divisions</h2>
           <nav aria-label="Footer divisions">
             {divisions.map((item) => (
-              <Link key={item.href} href={item.href}>{item.label}</Link>
+              <Link key={item.label} href={item.href}>{item.label}</Link>
             ))}
           </nav>
         </div>
