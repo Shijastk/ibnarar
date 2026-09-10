@@ -10,23 +10,18 @@ export type NavigationItem = NavigationLink | {
 
 export const navItems: readonly NavigationItem[] = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  {
-    label: "Divisions",
-    children: [
-      { label: "Trading & Services", href: "/trading" },
-      { label: "Engineering & Contracting", href: "/contracting" },
-      { label: "Heavy Equipment & Transportation", href: "/transportation" },
-    ],
-  },
-  { label: "Services", href: "/services" },
-  // Add Projects here only when verified project content is available.
-  { label: "Careers", href: "/careers" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "What We Do", href: "/#what-we-do" },
+  { label: "About Us", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Engineering", href: "/#engineering" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Contact Us", href: "/#contact" },
 ];
 
-export const enquiryLink: NavigationLink = { label: "Enquire Now", href: "/contact" };
+export const enquiryLink: NavigationLink = { label: "Enquire Now", href: "/#contact" };
 
 export function isActiveRoute(pathname: string, href: string) {
-  return pathname === href || (href !== "/" && pathname.startsWith(`${href}/`));
+  if (href === "/") return pathname === "/";
+  if (href.includes("#")) return false;
+  return pathname === href || pathname.startsWith(`${href}/`);
 }
