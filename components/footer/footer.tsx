@@ -86,7 +86,7 @@ export function Footer() {
             </div>
             <a className={styles.contactItem} href="mailto:info@ebnarar.com">
               <MailIcon />
-              <span>info@ibnarar.com</span>
+              <span>info@ebnarar.com</span>
             </a>
             <a className={styles.contactItem} href="tel:+9744800876">
               <PhoneIcon />
