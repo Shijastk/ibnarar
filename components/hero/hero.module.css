@@ -1,0 +1,214 @@
+.heroFrame {
+  width: 100%;
+  padding: 0 var(--hero-frame-gap) var(--hero-frame-gap);
+  background: var(--color-white);
+}
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: var(--hero-height);
+  min-height: 0;
+  overflow: hidden;
+  background: #dce3e8;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+.images,
+.imageLayer { position: absolute; inset: 0; }
+
+.imageLayer {
+  opacity: 0;
+  transform: scale(1.015);
+  transition: opacity var(--hero-transition-duration) ease, transform var(--hero-transition-duration) ease;
+}
+
+.imageActive { z-index: 1; opacity: 1; transform: scale(1); }
+.image { object-fit: cover; }
+
+.slideContent {
+  position: absolute;
+  z-index: 3;
+  top: 19%;
+  left: var(--hero-overlay-padding);
+  width: min(var(--hero-content-max-width), calc(100% - (2 * var(--hero-overlay-padding))));
+  color: var(--hero-highlight-text);
+}
+
+.heading,
+.description {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--hero-line-gap);
+}
+
+.heading { font-size: var(--hero-heading-size); font-weight: 700; line-height: 1.08; }
+.description { margin-top: 8px; font-size: var(--hero-copy-size); font-weight: 400; line-height: 1.2; }
+
+.revealLine {
+  --line-reveal-duration: var(--hero-heading-reveal-duration);
+  --line-sheen-delay: 350ms;
+  position: relative;
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  background: var(--hero-highlight-bg);
+  clip-path: inset(0 100% 0 0);
+  will-change: clip-path;
+  animation: heroLineReveal var(--line-reveal-duration) cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay) forwards;
+}
+
+.revealLine::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  inset-block: 0;
+  left: 0;
+  width: 18%;
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 25%), transparent);
+  transform: translateX(-160%);
+  pointer-events: none;
+  animation: heroLineSheen var(--hero-sheen-duration) ease-out calc(var(--reveal-delay) + var(--line-sheen-delay)) forwards;
+}
+
+.revealText {
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 5px var(--hero-strip-padding-x) 6px;
+  opacity: 0.72;
+  transform: translateX(-6px);
+  animation: heroTextSettle 380ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay) forwards;
+}
+
+.descriptionLine {
+  --line-reveal-duration: var(--hero-description-reveal-duration);
+  --line-sheen-delay: 270ms;
+  background: var(--hero-description-highlight-bg);
+}
+
+.descriptionLine .revealText { padding-block: 4px 5px; animation-duration: 320ms; }
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--hero-cta-height);
+  margin-top: 28px;
+  padding: 0 20px;
+  border-radius: var(--radius-xs);
+  background: var(--color-white);
+  color: var(--brand-primary);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: revealCta 380ms ease var(--cta-delay) forwards;
+}
+
+.cta:hover { background: var(--brand-primary-active); color: var(--color-white); }
+
+.arrow {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  display: flex;
+  width: var(--hero-arrow-size);
+  height: var(--hero-arrow-size);
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 38%);
+  border-radius: 50%;
+  background: rgb(8 11 99 / 30%);
+  color: var(--color-white);
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.arrow:hover { border-color: rgb(255 255 255 / 70%); background: rgb(8 11 99 / 76%); }
+.arrowPrevious { left: var(--hero-arrow-offset); }
+.arrowNext { right: var(--hero-arrow-offset); }
+.arrow svg { width: 23px; height: 23px; }
+
+.hero a:focus-visible,
+.hero button:focus-visible { outline: 2px solid var(--color-white); outline-offset: 3px; }
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes heroLineReveal {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes heroTextSettle {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes heroLineSheen {
+  to { transform: translateX(700%); }
+}
+
+@keyframes revealCta { to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 900px) {
+  .hero {
+    --hero-height: clamp(480px, 72vw, 620px);
+    --hero-overlay-padding: clamp(56px, 9vw, 82px);
+    --hero-heading-size: clamp(29px, 5vw, 38px);
+    --hero-copy-size: clamp(17px, 2.8vw, 22px);
+  }
+  .slideContent { top: 21%; }
+}
+
+@media (max-width: 600px) {
+  .heroFrame { padding-inline: 0; padding-bottom: 0; }
+  .hero {
+    --hero-height: clamp(500px, 135vw, 640px);
+    --hero-overlay-padding: 24px;
+    --hero-arrow-size: 38px;
+    --hero-arrow-offset: 13px;
+    --hero-heading-size: clamp(26px, 7.6vw, 34px);
+    --hero-copy-size: clamp(15px, 4.4vw, 19px);
+    --hero-strip-padding-x: 7px;
+  }
+  .image { object-position: 61% center !important; }
+  .slideContent { top: auto; bottom: 54px; width: calc(100% - 48px); }
+  .revealLine { max-width: calc(100vw - 48px); }
+  .revealText { white-space: nowrap; }
+  .cta { min-height: 44px; margin-top: 22px; padding-inline: 17px; font-size: 13px; }
+  .arrow { top: 40%; }
+}
+
+@media (max-width: 390px) {
+  .hero { --hero-overlay-padding: 18px; --hero-heading-size: 24px; --hero-copy-size: 13.5px; }
+  .slideContent { width: calc(100% - 36px); }
+  .revealLine { max-width: calc(100vw - 36px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .imageLayer { transition: none; transform: none; }
+  .revealLine { clip-path: inset(0); animation: none; }
+  .revealLine::after { display: none; animation: none; }
+  .revealText { opacity: 1; transform: none; animation: none; }
+  .cta { opacity: 1; transform: none; animation: none; }
+  .arrow, .cta { transition: none; }
+}
