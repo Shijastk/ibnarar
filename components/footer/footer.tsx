@@ -60,8 +60,8 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={styles.main}>
         <div className={styles.brandColumn}>
-          <Link href="/" className={styles.brand} aria-label="IBN ARAR home">
-            <Image src={logo} alt="IBN ARAR" className={styles.logo} priority={false} />
+          <Link href="/" className={styles.brand} aria-label="EBN ARAR home">
+            <Image src={logo} alt="EBN ARAR" className={styles.logo} priority={false} />
           </Link>
           <p>
             EBN ARAR Trading, Contracting &amp; Transporting Co. W.L.L. is a Qatar-based company serving clients through trading, engineering, contracting, heavy-equipment and transportation solutions since 2003.
@@ -84,17 +84,17 @@ export function Footer() {
               <PinIcon />
               <span>Furoosia Street, Building No. 7, Flat No. 10, P.B. No. 357, Qatar</span>
             </div>
-            <a className={styles.contactItem} href="mailto:ebnarar@gmail.com">
+            <a className={styles.contactItem} href="mailto:info@ebnarar.com">
               <MailIcon />
-              <span>ebnarar@gmail.com</span>
+              <span>info@ibnarar.com</span>
             </a>
             <a className={styles.contactItem} href="tel:+9744800876">
               <PhoneIcon />
-              <span>+974 4800876</span>
+              <span>+974 55577458</span>
             </a>
             <div className={styles.contactItem}>
               <FaxIcon />
-              <span>Fax: +974 4809542</span>
+              <span>Fax: +974 55577458</span>
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@ export function Footer() {
 
       <div className={styles.bottomBar}>
         <span>Established in Qatar since 2003</span>
-        <span>© {new Date().getFullYear()} EBN ARAR Trading, Contracting &amp; Transporting Co. W.L.L. All rights reserved.</span>
+        <span>© 2003 EBN ARAR Trading, Contracting &amp; Transporting Co. W.L.L. All rights reserved.</span>
         <span>State of Qatar</span>
       </div>
     </footer>
