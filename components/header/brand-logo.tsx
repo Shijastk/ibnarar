@@ -7,7 +7,7 @@ export function BrandLogo({ src }: { src: string | StaticImageData }) {
     <Link
       href="/"
       className={styles.brand}
-      aria-label="IBN ARAR Trading, Contracting and Transport Company — Home"
+      aria-label="EBN ARAR Trading, Contracting and Transport Company — Home"
     >
       <span className={styles.brandMark}>
         <Image src={src} alt="" fill sizes="84px" preload className={styles.logo} />
@@ -17,7 +17,7 @@ export function BrandLogo({ src }: { src: string | StaticImageData }) {
           شركة ابن عرار للتجارة والمقاولات والنقليات
         </span>
         <span className={styles.wordmarkEnglish} lang="en">
-          IBN ARAR TRADING &amp; CONT&amp; TRANSPORT CO.
+          EBN ARAR TRADING &amp; CONT&amp; TRANSPORT CO.
         </span>
       </span>
     </Link>
