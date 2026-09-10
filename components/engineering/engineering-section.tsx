@@ -89,6 +89,12 @@ const engineeringCards = [
   },
 ] as const;
 
+const capabilityHighlights = [
+  "Residential Buildings & Villas",
+  "Industrial Steel Structures",
+  "Project Planning & Coordination",
+] as const;
+
 export function EngineeringSection() {
   return (
     <section className={styles.section} aria-labelledby="engineering-title">
@@ -101,6 +107,15 @@ export function EngineeringSection() {
           <p className={styles.intro}>
             EBN ARAR Engineering & Contracting delivers civil and construction work ranging from residential buildings and villas to industrial steel structures, supported by experienced project management and dependable resources.
           </p>
+
+          <div className={styles.capabilityList} aria-label="Engineering capabilities">
+            {capabilityHighlights.map((item) => (
+              <div className={styles.capabilityItem} key={item}>
+                <span className={styles.capabilityMarker} aria-hidden="true" />
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className={styles.rightColumn}>
