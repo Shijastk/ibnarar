@@ -1,6 +1,6 @@
 .section {
   background: var(--background);
-  padding: clamp(76px, 7vw, 104px) var(--page-gutter);
+  padding: clamp(54px, 5vw, 72px) var(--page-gutter);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .title {
-  margin: 0 0 clamp(42px, 4vw, 54px);
+  margin: 0 0 clamp(30px, 3vw, 40px);
   text-align: center;
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
@@ -59,7 +59,11 @@
 
 @media (max-width: 640px) {
   .section {
-    padding-inline: 20px;
+    padding: 48px 20px;
+  }
+
+  .title {
+    margin-bottom: 28px;
   }
 
   .grid {
