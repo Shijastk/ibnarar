@@ -2,17 +2,18 @@
   background: var(--brand-primary);
   color: var(--color-white);
   overflow: hidden;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
 .inner {
   max-width: 1440px;
   margin: 0 auto;
-  min-height: 610px;
-  padding: clamp(54px, 5.4vw, 78px) var(--page-gutter) 0;
+  padding: clamp(64px, 5.6vw, 84px) var(--page-gutter);
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   gap: clamp(48px, 6vw, 88px);
   position: relative;
+  align-items: start;
 }
 
 .leftColumn,
@@ -50,10 +51,12 @@
 .title {
   max-width: 610px;
   margin: 0;
-  font-size: clamp(34px, 3.25vw, 50px);
-  line-height: 1.08;
-  font-weight: 500;
-  letter-spacing: -0.035em;
+  color: inherit;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-size: var(--showcase-title-size);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.018em;
 }
 
 .intro {
@@ -64,25 +67,8 @@
   line-height: 1.62;
 }
 
-.visualWrap {
-  width: min(560px, 100%);
-  margin-top: auto;
-  align-self: center;
-  transform: translateY(54px);
-  filter: drop-shadow(0 20px 24px rgb(0 0 0 / 18%));
-}
-
-.visual {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  mix-blend-mode: screen;
-}
-
 .rightColumn {
   padding-top: 6px;
-  padding-bottom: 66px;
 }
 
 .cards {
@@ -113,9 +99,12 @@
 
 .card h3 {
   margin: 0 0 14px;
-  font-size: clamp(19px, 1.55vw, 24px);
-  line-height: 1.15;
-  letter-spacing: -0.025em;
+  color: inherit;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-size: var(--showcase-title-size);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.018em;
 }
 
 .card p {
@@ -123,44 +112,6 @@
   color: #4b4d54;
   font-size: 14px;
   line-height: 1.58;
-}
-
-.focusBand {
-  margin-top: 28px;
-  width: min(100%, 610px);
-  background: #fff;
-  color: #161616;
-  min-height: 90px;
-  padding: 18px 22px;
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  border-left: 8px solid #2f64bd;
-  border-radius: var(--radius-xs);
-}
-
-.focusLabel {
-  color: #656a74;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  white-space: nowrap;
-}
-
-.focusItems {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px 24px;
-}
-
-.focusItem {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--brand-primary);
-  font-size: 14px;
-  font-weight: 700;
 }
 
 .cta {
@@ -196,12 +147,6 @@
     padding-bottom: 72px;
   }
 
-  .visualWrap {
-    width: min(620px, 92%);
-    margin-top: 34px;
-    transform: none;
-  }
-
   .rightColumn {
     padding: 0;
   }
@@ -218,16 +163,6 @@
 
   .card {
     min-height: 0;
-  }
-
-  .focusBand {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .focusItems {
-    flex-direction: column;
   }
 }
 
