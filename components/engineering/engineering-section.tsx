@@ -131,8 +131,8 @@ export function EngineeringSection() {
             ))}
           </div>
 
-          <Link className={styles.cta} href="/contracting">
-            Explore Contracting <ArrowUpRightIcon size={17} />
+          <Link className={styles.cta} href="/#projects">
+            Explore Project Capabilities <ArrowUpRightIcon size={17} />
           </Link>
         </div>
       </div>
