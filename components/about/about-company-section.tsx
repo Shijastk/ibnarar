@@ -51,7 +51,7 @@ function AboutContent() {
         quality, efficiency and reliable resources.
       </p>
       <div className={styles.ctaWrap}>
-        <ProjectCTA href="/about" label="Explore Our Company" />
+        <ProjectCTA href="/#what-we-do" label="Explore Our Capabilities" />
       </div>
     </div>
   );
