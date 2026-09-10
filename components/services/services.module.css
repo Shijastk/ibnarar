@@ -8,10 +8,10 @@
 
 .inner { width: min(100%, var(--services-section-max-width)); margin: 0 auto; }
 
-.header { max-width: 780px; margin-bottom: 54px; }
+.header { max-width: 780px; margin-bottom: 40px; }
 
 .eyebrow {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   color: var(--brand-primary-active);
   font-size: 13px;
   font-weight: 700;
@@ -31,7 +31,7 @@
 
 .intro {
   max-width: 66ch;
-  margin: 20px 0 0;
+  margin: 16px 0 0;
   color: #555760;
   font-size: 16px;
   line-height: 1.65;
@@ -158,8 +158,8 @@
 }
 
 @media (max-width: 620px) {
-  .section { --services-section-padding: 76px; --service-card-padding: 30px 25px; padding-inline: var(--page-gutter); }
-  .header { margin-bottom: 42px; }
+  .section { --services-section-padding: 52px; --service-card-padding: 30px 25px; padding-inline: var(--page-gutter); }
+  .header { margin-bottom: 32px; }
   .heading { font-size: clamp(30px, 9vw, 39px); }
   .intro { font-size: 15px; }
   .grid { grid-template-columns: 1fr; gap: 14px; }
