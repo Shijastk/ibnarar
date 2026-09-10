@@ -5,6 +5,7 @@ import { ServicesSection } from "@/components/services/services-section";
 import { CompanyHighlightsSection } from "@/components/highlights/company-highlights-section";
 import { PartnersSection } from "@/components/partners/partners-section";
 import { EngineeringSection } from "@/components/engineering/engineering-section";
+import { ProjectGridSection } from "@/components/projects/project-grid-section";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <CompanyHighlightsSection />
       <PartnersSection />
       <EngineeringSection />
+      <ProjectGridSection />
     </main>
   );
 }
