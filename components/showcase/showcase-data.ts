@@ -26,7 +26,7 @@ export const showcaseItems: readonly ShowcaseItem[] = [
     title: "Engineering & Contracting",
     description:
       "Civil, building and industrial contracting services focused on quality execution, safety and dependable project delivery.",
-    href: "/contracting",
+    href: "/#engineering",
     ctaLabel: "Explore Contracting",
     icon: "contracting",
     image: engineeringImage,
@@ -38,7 +38,7 @@ export const showcaseItems: readonly ShowcaseItem[] = [
     title: "Trading & Services",
     description:
       "Dependable sourcing and supply of industrial products, electrical items, hardware, tools, equipment and safety products.",
-    href: "/trading",
+    href: "/#services",
     ctaLabel: "Explore Trading",
     icon: "trading",
     image: tradingImage,
@@ -50,7 +50,7 @@ export const showcaseItems: readonly ShowcaseItem[] = [
     title: "Heavy Equipment & Transportation",
     description:
       "Heavy equipment rental, transportation and project support for demanding construction and industrial operations.",
-    href: "/transportation",
+    href: "/#services",
     ctaLabel: "Explore Equipment",
     icon: "transportation",
     image: equipmentImage,
