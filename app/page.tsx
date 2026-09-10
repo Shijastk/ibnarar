@@ -9,15 +9,25 @@ import { ProjectGridSection } from "@/components/projects/project-grid-section";
 
 export default function Home() {
   return (
-    <main>
+    <main id="home">
       <HeroSlider />
-      <ProjectShowcase />
-      <AboutCompanySection />
-      <ServicesSection />
+      <div id="what-we-do" className="section-anchor">
+        <ProjectShowcase />
+      </div>
+      <div id="about" className="section-anchor">
+        <AboutCompanySection />
+      </div>
+      <div id="services" className="section-anchor">
+        <ServicesSection />
+      </div>
       <CompanyHighlightsSection />
       <PartnersSection />
-      <EngineeringSection />
-      <ProjectGridSection />
+      <div id="engineering" className="section-anchor">
+        <EngineeringSection />
+      </div>
+      <div id="projects" className="section-anchor">
+        <ProjectGridSection />
+      </div>
     </main>
   );
 }
