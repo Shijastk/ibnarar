@@ -101,9 +101,11 @@
   min-height: var(--hero-cta-height);
   margin-top: 28px;
   padding: 0 20px;
+  border: 1px solid rgb(255 255 255 / 42%);
   border-radius: var(--radius-xs);
-  background: var(--color-white);
-  color: var(--brand-primary);
+  background: var(--brand-primary-active);
+  color: var(--color-white);
+  box-shadow: 0 8px 24px rgb(6 8 77 / 22%);
   font-size: 14px;
   font-weight: 650;
   line-height: 1;
@@ -111,9 +113,14 @@
   opacity: 0;
   transform: translateY(8px);
   animation: revealCta 380ms ease var(--cta-delay) forwards;
+  transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
-.cta:hover { background: var(--brand-primary-active); color: var(--color-white); }
+.cta:hover {
+  background: var(--brand-primary-dark);
+  border-color: rgb(255 255 255 / 62%);
+  box-shadow: 0 10px 28px rgb(6 8 77 / 30%);
+}
 
 .arrow {
   position: absolute;
@@ -209,6 +216,6 @@
   .revealLine { clip-path: inset(0); animation: none; }
   .revealLine::after { display: none; animation: none; }
   .revealText { opacity: 1; transform: none; animation: none; }
-  .cta { opacity: 1; transform: none; animation: none; }
-  .arrow, .cta { transition: none; }
+  .cta { opacity: 1; transform: none; animation: none; transition: none; }
+  .arrow { transition: none; }
 }
