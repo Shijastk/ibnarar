@@ -83,7 +83,7 @@ export function Footer() {
           <div className={styles.contactList}>
             <div className={styles.contactItem}>
               <PinIcon />
-              <span>Furoosia Street, Building No. 7, Flat No. 10, P.B. No. 357, Qatar</span>
+              <span>Doha ,AL-Rayan, Qatar</span>
             </div>
             <a className={styles.contactItem} href="mailto:info@ebnarar.com">
               <MailIcon />
