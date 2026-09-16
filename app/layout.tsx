@@ -31,10 +31,11 @@ const brandArabic = Noto_Naskh_Arabic({
   weight: "700",
 });
 
-const siteUrl = "https://ibnarar.com";
+const siteUrl = "https://www.ibnarar.com";
 const siteTitle = "EBN ARAR | Trading, Contracting & Transportation in Qatar";
 const siteDescription =
   "Qatar-based trading, engineering and contracting, heavy equipment and transportation company serving clients since 2003.";
+const socialImage = "/logo.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     "industrial supplies Qatar",
   ],
   alternates: {
-    canonical: "/",
+    canonical: siteUrl,
   },
   icons: {
     icon: [{ url: "/logo.png", type: "image/png" }],
@@ -67,11 +68,18 @@ export const metadata: Metadata = {
     description: siteDescription,
     siteName: "EBN ARAR Group",
     locale: "en_US",
+    images: [
+      {
+        url: socialImage,
+        alt: "EBN ARAR Trading, Contracting and Transportation",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
+    images: [socialImage],
   },
   robots: {
     index: true,
