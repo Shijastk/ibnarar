@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./footer.module.css";
-import logo from "@/public/logo.png";
+import logo from "@/public/ibn-logo.png";
 
 const quickLinks = [
   { label: "Home", href: "/" },
