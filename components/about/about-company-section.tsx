@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import aboutImage from "@/public/images/about/ebn-arar-industrial-site.webp";
+import aboutImage from "@/public/images/about/ibn-arar-industrial-site.webp";
 import { ProjectCTA } from "@/components/showcase/showcase-cta";
 import styles from "./about.module.css";
 
@@ -40,7 +40,7 @@ function AboutContent() {
       </h2>
       <span className={styles.divider} aria-hidden="true" />
       <p className={styles.paragraph}>
-        EBN ARAR Trading, Contracting &amp; Transporting Co. W.L.L. is a Qatar-based
+        IBN ARAR Trading, Contracting &amp; Transporting Co. W.L.L. is a Qatar-based
         company providing trading services, transportation and contracting solutions.
         Since its inception in 2003, the group has expanded to meet customers&apos;
         increasing demands.
