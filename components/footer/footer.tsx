@@ -61,11 +61,11 @@ export function Footer() {
     <footer id="contact" className={`${styles.footer} section-anchor`}>
       <div className={styles.main}>
         <div className={styles.brandColumn}>
-          <Link href="/" className={styles.brand} aria-label="EBN ARAR home">
-            <Image src={logo} alt="EBN ARAR" className={styles.logo} priority={false} />
+          <Link href="/" className={styles.brand} aria-label="IBN ARAR home">
+            <Image src={logo} alt="IBN ARAR" className={styles.logo} priority={false} />
           </Link>
           <p>
-            EBN ARAR Trading, Contracting &amp; Transporting Co. W.L.L. is a Qatar-based company serving clients through trading, engineering, contracting, heavy-equipment and transportation solutions since 2003.
+            IBN ARAR Trading, Contracting &amp; Transporting Co. W.L.L. is a Qatar-based company serving clients through trading, engineering, contracting, heavy-equipment and transportation solutions since 2003.
           </p>
         </div>
 
@@ -112,7 +112,7 @@ export function Footer() {
 
       <div className={styles.bottomBar}>
         <span>Established in Qatar since 2003</span>
-        <span>© 2003 EBN ARAR Trading, Contracting &amp; Transporting Co. W.L.L. All rights reserved.</span>
+        <span>© 2003 IBN ARAR Trading, Contracting &amp; Transporting Co. W.L.L. All rights reserved.</span>
         <span>State of Qatar</span>
       </div>
     </footer>
