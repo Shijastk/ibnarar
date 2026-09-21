@@ -32,7 +32,7 @@ const brandArabic = Noto_Naskh_Arabic({
 });
 
 const siteUrl = "https://www.ibnarar.com";
-const siteTitle = "EBN ARAR | Trading, Contracting & Transportation in Qatar";
+const siteTitle = "IBN ARAR | Trading, Contracting & Transportation in Qatar";
 const siteDescription =
   "Qatar-based trading, engineering and contracting, heavy equipment and transportation company serving clients since 2003.";
 const socialImage = "/logo.png";
@@ -41,12 +41,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: siteTitle,
-    template: "%s | EBN ARAR",
+    template: "%s | IBN ARAR",
   },
   description: siteDescription,
-  applicationName: "EBN ARAR",
+  applicationName: "IBN ARAR",
   keywords: [
-    "EBN ARAR",
+    "IBN ARAR",
     "Qatar trading company",
     "engineering and contracting Qatar",
     "heavy equipment Qatar",
@@ -66,12 +66,12 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: siteTitle,
     description: siteDescription,
-    siteName: "EBN ARAR Group",
+    siteName: "IBN ARAR Group",
     locale: "en_US",
     images: [
       {
         url: socialImage,
-        alt: "EBN ARAR Trading, Contracting and Transportation",
+        alt: "IBN ARAR Trading, Contracting and Transportation",
       },
     ],
   },
