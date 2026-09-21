@@ -11,7 +11,7 @@ const mockPartners = [
 
 /**
  * MOCK partner logos only.
- * Replace these entries with verified EBN ARAR partner logos before production.
+ * Replace these entries with verified IBN ARAR partner logos before production.
  */
 export function PartnersSection() {
   return (
