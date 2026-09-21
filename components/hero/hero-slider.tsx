@@ -43,7 +43,7 @@ export function HeroSlider() {
       <section
         className={styles.hero}
         aria-roledescription="carousel"
-        aria-label="EBN ARAR business divisions"
+        aria-label="IBN ARAR business divisions"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
         onFocusCapture={() => setPaused(true)}
