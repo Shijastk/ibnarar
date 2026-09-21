@@ -35,7 +35,7 @@ const siteUrl = "https://www.ibnarar.com";
 const siteTitle = "IBN ARAR | Trading, Contracting & Transportation in Qatar";
 const siteDescription =
   "Qatar-based trading, engineering and contracting, heavy equipment and transportation company serving clients since 2003.";
-const socialImage = "/logo.png";
+const socialImage = "/ibn-logo-social.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   icons: {
-    icon: [{ url: "/logo.png", type: "image/png" }],
-    shortcut: ["/logo.png"],
-    apple: [{ url: "/logo.png", type: "image/png" }],
+    icon: [{ url: "/ibn-logo.png", type: "image/png" }],
+    shortcut: ["/ibn-logo.png"],
+    apple: [{ url: "/ibn-logo.png", type: "image/png" }],
   },
   openGraph: {
     type: "website",
