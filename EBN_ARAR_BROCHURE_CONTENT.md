@@ -257,7 +257,7 @@ The brochure lists the following under **Our Sister Concern Companies**:
 **Fax:** +974 4809542  
 **P.B. No.:** 357  
 **Address:** Furoosia Street, Building No. 7, Flat No. 10  
-**Email:** ebnarar@gmail.com
+**Email:** ibnarar@gmail.com
 
 > Important: These contact details appear on an older brochure and should be confirmed with the client before being used on the live website.
 
