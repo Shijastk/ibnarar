@@ -85,9 +85,9 @@ export function Footer() {
               <PinIcon />
               <span>Doha ,AL-Rayan, Qatar</span>
             </div>
-            <a className={styles.contactItem} href="mailto:info@ebnarar.com">
+            <a className={styles.contactItem} href="mailto:info@ibnarar.com">
               <MailIcon />
-              <span>info@ebnarar.com</span>
+              <span>info@ibnarar.com</span>
             </a>
             <a className={styles.contactItem} href="tel:+97455577458">
               <PhoneIcon />
