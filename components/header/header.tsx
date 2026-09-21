@@ -5,7 +5,7 @@ import { BrandLogo } from "./brand-logo";
 import { DesktopNavigation } from "./desktop-navigation";
 import { MobileNavigation } from "./mobile-navigation";
 import styles from "./header.module.css";
-import logo from "@/public/logo.png";
+import logo from "@/public/ibn-logo.png";
 
 export function Header() {
   const pathname = usePathname();
