@@ -105,7 +105,7 @@ export function EngineeringSection() {
             Civil, Construction & Industrial Engineering Works
           </h2>
           <p className={styles.intro}>
-            EBN ARAR Engineering & Contracting delivers civil and construction work ranging from residential buildings and villas to industrial steel structures, supported by experienced project management and dependable resources.
+            IBN ARAR Engineering & Contracting delivers civil and construction work ranging from residential buildings and villas to industrial steel structures, supported by experienced project management and dependable resources.
           </p>
 
           <div className={styles.capabilityList} aria-label="Engineering capabilities">
