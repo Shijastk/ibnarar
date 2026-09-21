@@ -25,7 +25,7 @@ export const heroSlides: readonly HeroSlideData[] = [
       "Trading, contracting and transportation",
       "solutions serving Qatar since 2003.",
     ],
-    cta: { label: "Discover EBN ARAR", href: "/#about" },
+    cta: { label: "Discover IBN ARAR", href: "/#about" },
   },
   {
     id: "engineering-contracting",
