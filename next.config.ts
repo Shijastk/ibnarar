@@ -6,4 +6,4 @@ const nextConfig: NextConfig = {
 
 export default nextConfig;
 
-// IBN logo deployment refresh
+// IBN logo deployment refresh — 2026-09-22
